@@ -32,3 +32,5 @@ storage
 tmp
 vendor
 .yarn/*
+terraform/application/config/airbyte_stream_config.json
+config/initializers/dfe_analytics.rb
