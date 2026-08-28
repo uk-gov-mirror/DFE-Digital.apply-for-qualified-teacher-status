@@ -18,6 +18,7 @@ DfE::Analytics.configure do |config|
     proc do
       disabled_by_default = Rails.env.development?
       ENV.fetch("BIGQUERY_DISABLE", disabled_by_default.to_s) != "true"
+    end
 
   config.airbyte_stream_config_path = 'terraform/aks/workspace_variables/airbyte_stream_config.json'
 
